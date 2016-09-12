@@ -1,0 +1,208 @@
+{
+  "revision_id": "b398d4da756f2fad92f871f5e2813a04381659a64b8b48e74125005c60476178",
+  "name": "terraform-wrapper",
+  "run_list": [
+    "recipe[terraform-wrapper::default]"
+  ],
+  "named_run_lists": {
+    "terraform": [
+      "recipe[terraform-wrapper::default]"
+    ]
+  },
+  "cookbook_locks": {
+    "terraform-wrapper": {
+      "version": "0.1.0",
+      "identifier": "93832a16a4df6f4a4dd2d8ac8772b04c6781a055",
+      "dotted_decimal_identifier": "41521038368235375.20914716250244978.193842200551509",
+      "source": ".",
+      "cache_key": null,
+      "scm_info": null,
+      "source_options": {
+        "path": "."
+      }
+    },
+    "terraform": {
+      "version": "0.5.1",
+      "identifier": "35a3862cb2aadb6e1944cf57b7379270f4ee77d7",
+      "dotted_decimal_identifier": "15097970436516571.30990030765274935.161013843261399",
+      "cache_key": "terraform-0.5.1-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/terraform/versions/0.5.1/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/terraform/versions/0.5.1/download",
+        "version": "0.5.1"
+      }
+    },
+    "ark": {
+      "version": "1.1.0",
+      "identifier": "885de2e8bdb2282127574fdf974bcb2f383b3b84",
+      "dotted_decimal_identifier": "38383825981387304.9331930187142987.223403667307396",
+      "cache_key": "ark-1.1.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/ark/versions/1.1.0/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/ark/versions/1.1.0/download",
+        "version": "1.1.0"
+      }
+    },
+    "build-essential": {
+      "version": "6.0.5",
+      "identifier": "6f606a18c6d9b26f5ac47774a1be59bc8ac59c6a",
+      "dotted_decimal_identifier": "31349731213367730.31343522279104958.98666316930154",
+      "cache_key": "build-essential-6.0.5-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/build-essential/versions/6.0.5/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/build-essential/versions/6.0.5/download",
+        "version": "6.0.5"
+      }
+    },
+    "seven_zip": {
+      "version": "2.0.2",
+      "identifier": "8e6795446cfa8e0a4a09cef4d5d35eb2d522a24d",
+      "dotted_decimal_identifier": "40083337488693902.2896155754419667.104122173006413",
+      "cache_key": "seven_zip-2.0.2-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/seven_zip/versions/2.0.2/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/seven_zip/versions/2.0.2/download",
+        "version": "2.0.2"
+      }
+    },
+    "windows": {
+      "version": "2.0.2",
+      "identifier": "59e724b02f856cdd8a72cb82922eb820557ab3c7",
+      "dotted_decimal_identifier": "25305417687991660.62358195498291758.202449012569031",
+      "cache_key": "windows-2.0.2-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/windows/versions/2.0.2/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/windows/versions/2.0.2/download",
+        "version": "2.0.2"
+      }
+    },
+    "mingw": {
+      "version": "1.2.4",
+      "identifier": "c4f0ae0ce0635c9ec82cdc01b570a7dcc1b19521",
+      "dotted_decimal_identifier": "55433725766296412.44693141315499376.184566584284449",
+      "cache_key": "mingw-1.2.4-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/mingw/versions/1.2.4/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/mingw/versions/1.2.4/download",
+        "version": "1.2.4"
+      }
+    },
+    "compat_resource": {
+      "version": "12.14.2",
+      "identifier": "6038dbd4fd46d0e5e01a297cb18bfd4f9b7c0f00",
+      "dotted_decimal_identifier": "27084114586584784.64704172636549515.278518352842496",
+      "cache_key": "compat_resource-12.14.2-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/compat_resource/versions/12.14.2/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/compat_resource/versions/12.14.2/download",
+        "version": "12.14.2"
+      }
+    }
+  },
+  "default_attributes": {
+
+  },
+  "override_attributes": {
+
+  },
+  "solution_dependencies": {
+    "Policyfile": [
+      [
+        "terraform-wrapper",
+        ">= 0.0.0"
+      ],
+      [
+        "terraform",
+        "= 0.5.1"
+      ],
+      [
+        "ark",
+        "= 1.1.0"
+      ],
+      [
+        "build-essential",
+        "= 6.0.5"
+      ],
+      [
+        "seven_zip",
+        "= 2.0.2"
+      ],
+      [
+        "windows",
+        "= 2.0.2"
+      ],
+      [
+        "mingw",
+        "= 1.2.4"
+      ],
+      [
+        "compat_resource",
+        "= 12.14.2"
+      ]
+    ],
+    "dependencies": {
+      "terraform (0.5.1)": [
+        [
+          "ark",
+          "~> 1.1.0"
+        ]
+      ],
+      "ark (1.1.0)": [
+        [
+          "build-essential",
+          ">= 0.0.0"
+        ],
+        [
+          "windows",
+          ">= 0.0.0"
+        ],
+        [
+          "seven_zip",
+          ">= 0.0.0"
+        ]
+      ],
+      "build-essential (6.0.5)": [
+        [
+          "seven_zip",
+          ">= 0.0.0"
+        ],
+        [
+          "mingw",
+          ">= 1.1.0"
+        ],
+        [
+          "compat_resource",
+          ">= 12.14.0"
+        ]
+      ],
+      "seven_zip (2.0.2)": [
+        [
+          "windows",
+          ">= 1.2.2"
+        ]
+      ],
+      "windows (2.0.2)": [
+
+      ],
+      "mingw (1.2.4)": [
+        [
+          "seven_zip",
+          ">= 0.0.0"
+        ],
+        [
+          "compat_resource",
+          ">= 0.0.0"
+        ]
+      ],
+      "compat_resource (12.14.2)": [
+
+      ],
+      "terraform-wrapper (0.1.0)": [
+        [
+          "terraform",
+          ">= 0.0.0"
+        ]
+      ]
+    }
+  }
+}
